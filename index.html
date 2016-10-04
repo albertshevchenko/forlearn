@@ -1,0 +1,621 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+    <title>XTube</title>
+    <link href="css/style.css" media="all" rel="stylesheet" type="text/css">
+    <link href="doc/feed.txt" rel="alternate" title="VideoPro RSS Feed" type="application/rss+xml">
+    <link href="doc/atom.txt" rel="alternate" title="VideoPro Atom Feed" type="application/atom+xml">
+    <link href="http://demo.theme-junkie.com/videopro/xmlrpc.php" rel="pingback">
+    <link href="css/default.css" rel="stylesheet" type="text/css">
+    <link href="css/jquery.fancybox.css" rel="stylesheet" type="text/css">
+    <link href="css/custom.css" rel="stylesheet" type="text/css">
+    <link href='//s.w.org' rel='dns-prefetch'>
+    <link href="doc/feedtwo/" rel="alternate" title="VideoPro &raquo; Feed" type="application/rss+xml">
+    <link href="doc/feedthree/" rel="alternate" title="VideoPro &raquo; Comments Feed" type="application/rss+xml">
+    <script type="text/javascript">
+            window._wpemojiSettings = {"baseUrl":"https:\/\/s.w.org\/images\/core\/emoji\/2\/72x72\/","ext":".png","svgUrl":"https:\/\/s.w.org\/images\/core\/emoji\/2\/svg\/","svgExt":".svg","source":{"concatemoji":"http:\/\/demo.theme-junkie.com\/videopro\/wp-includes\/js\/wp-emoji-release.min.js"}};
+            !function(a,b,c){function d(a){var c,d,e,f,g,h=b.createElement("canvas"),i=h.getContext&&h.getContext("2d"),j=String.fromCharCode;if(!i||!i.fillText)return!1;switch(i.textBaseline="top",i.font="600 32px Arial",a){case"flag":return i.fillText(j(55356,56806,55356,56826),0,0),!(h.toDataURL().length<3e3)&&(i.clearRect(0,0,h.width,h.height),i.fillText(j(55356,57331,65039,8205,55356,57096),0,0),c=h.toDataURL(),i.clearRect(0,0,h.width,h.height),i.fillText(j(55356,57331,55356,57096),0,0),d=h.toDataURL(),c!==d);case"diversity":return i.fillText(j(55356,57221),0,0),e=i.getImageData(16,16,1,1).data,f=e[0]+","+e[1]+","+e[2]+","+e[3],i.fillText(j(55356,57221,55356,57343),0,0),e=i.getImageData(16,16,1,1).data,g=e[0]+","+e[1]+","+e[2]+","+e[3],f!==g;case"simple":return i.fillText(j(55357,56835),0,0),0!==i.getImageData(16,16,1,1).data[0];case"unicode8":return i.fillText(j(55356,57135),0,0),0!==i.getImageData(16,16,1,1).data[0];case"unicode9":return i.fillText(j(55358,56631),0,0),0!==i.getImageData(16,16,1,1).data[0]}return!1}function e(a){var c=b.createElement("script");c.src=a,c.type="text/javascript",b.getElementsByTagName("head")[0].appendChild(c)}var f,g,h,i;for(i=Array("simple","flag","unicode8","diversity","unicode9"),c.supports={everything:!0,everythingExceptFlag:!0},h=0;h<i.length;h++)c.supports[i[h]]=d(i[h]),c.supports.everything=c.supports.everything&&c.supports[i[h]],"flag"!==i[h]&&(c.supports.everythingExceptFlag=c.supports.everythingExceptFlag&&c.supports[i[h]]);c.supports.everythingExceptFlag=c.supports.everythingExceptFlag&&!c.supports.flag,c.DOMReady=!1,c.readyCallback=function(){c.DOMReady=!0},c.supports.everything||(g=function(){c.readyCallback()},b.addEventListener?(b.addEventListener("DOMContentLoaded",g,!1),a.addEventListener("load",g,!1)):(a.attachEvent("onload",g),b.attachEvent("onreadystatechange",function(){"complete"===b.readyState&&c.readyCallback()})),f=c.source||{},f.concatemoji?e(f.concatemoji):f.wpemoji&&f.twemoji&&(e(f.twemoji),e(f.wpemoji)))}(window,document,window._wpemojiSettings);
+    </script>
+    <meta content="css/style.css v." name="generator">
+    <style type="text/css">
+	    img.wp-smiley,
+	    img.emoji {
+	    display: inline !important;
+	    border: none !important;
+	    box-shadow: none !important;
+	    height: 1em !important;
+	    width: 1em !important;
+	    margin: 0 .07em !important;
+	    vertical-align: -0.1em !important;
+	    background: none !important;
+	    padding: 0 !important;
+    }
+    </style>
+    <link href='css/shortcodes.css' id='shortcodes-css' media='all' rel='stylesheet' type='text/css'>
+    <link href='css/pagenavi-css.css' id='wp-pagenavi-css' media='all' rel='stylesheet' type='text/css'>
+    <script src='js/jquery.min.js' type='text/javascript'></script>
+    <script src='js/shortcodes.js' type='text/javascript'></script>
+    <script src='js/jquery-ui.min.js' type='text/javascript'></script>
+    <script src='js/superfish.js' type='text/javascript'></script>
+    <script src='js/jquery.fancybox.js' type='text/javascript'></script>
+    <script src='js/html5.js' type='text/javascript'></script>
+    <script src='js/custom.js' type='text/javascript'></script>
+    <link href='http://demo.theme-junkie.com/videopro/wp-json/' rel='https://api.w.org/'>
+    <link href="php/xmlrpc.php?rsd" rel="EditURI" title="RSD" type="application/rsd+xml">
+    <link href="xml/wlwmanifest.xml" rel="wlwmanifest" type="application/wlwmanifest+xml">
+    <meta content="WordPress 4.6.1" name="generator">
+    <link href="images/icon/favicon.png" rel="shortcut icon">
+    <!-- Custom Styling -->
+    <style type="text/css">
+	    body { }
+	    </style>
+	    <style type="text/css">
+	    .recentcomments a{display:inline !important;padding:0 !important;margin:0 !important;}
+    </style>
+</head>
+<body class="home blog chrome">
+    <div id="wrapper">
+        <div id="top">
+            <p id="site-desc">Just another Theme Junkie Demos site</p>
+            <div class="social-counter">
+                <a class="rss" href="http://feeds.feedburner.com/ThemeJunkie" rel="nofollow">RSS <span>9000</span></a> 
+                <a href="https://plus.google.com/116387478398345310130" rel="nofollow">Google + <span>1986</span></a> 
+                <a href="http://twitter.com/theme_junkie" rel="nofollow">Twitter<span>1866</span></a> 
+                <a href="http://www.facebook.com/wordpress" rel="nofollow">Facebook<span>23000</span></a>
+            </div><!-- .social-counter -->
+        </div><!-- #top -->
+        <header>
+            <a href="http://demo.theme-junkie.com/videopro">
+            	<img alt="VideoPro" id="logo" src="http://demo.theme-junkie.com/videopro/wp-content/themes/videopro/images/logo.png">
+            </a>
+            <div class="right">
+                <div id="primary-nav">
+                    <ul class="nav" id="primary-navigation">
+                        <li class="first home-item">
+                        	<a href="#">Home</a>
+                        </li>
+                        <li class="page_item page-item-7">
+                        	<a href="pages/about.html">About</a>
+                        </li>
+                        <li class="page_item page-item-9">
+                        	<a href="pages/elements.html">Elements</a>
+                        </li>
+                        <li class="page_item page-item-11 page_item_has_children">
+                            <a href="pages/templates.html">Page Templates</a>
+                            <ul class='children'>
+                                <li class="page_item page-item-13 page_item_has_children">
+                                	<a href="pages/templates/archives.html">Archives</a>
+                                    <ul class='children'>
+                                        <li class="page_item page-item-2">
+                                        	<a href="http://demo.theme-junkie.com/videopro/page-templates/archives/sample-page/">Sample Page</a>
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li class="page_item page-item-15">
+                                	<a href="http://demo.theme-junkie.com/videopro/page-templates/contact-form/">Contact Form</a>
+                                </li>
+                                <li class="page_item page-item-22">
+                                	<a href="http://demo.theme-junkie.com/videopro/page-templates/full-width/">Full Width</a>
+                                </li>
+                                <li class="page_item page-item-27">
+                                	<a href="http://demo.theme-junkie.com/videopro/page-templates/redirect/">Redirect</a>
+                                </li>
+                                <li class="page_item page-item-24">
+                                	<a href="http://demo.theme-junkie.com/videopro/page-templates/sitemap/">Sitemap</a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="page_item page-item-158">
+                        	<a href="pages/shortcodes.html">Shortcodes</a>
+                        </li>
+                    </ul>
+                </div><!-- #primary-nav -->
+                <div id="header-search" role="search">
+                    <form action="http://demo.theme-junkie.com/videopro/" id="search-form" method="get" name="search-form">
+                        <input id="site_search" name="s" placeholder="Type and hit enter" type="text">
+                    </form>
+                </div><!-- #header-search -->
+            </div><!-- .right -->
+            <div class="clear"></div>
+        </header><!-- header-->
+        <div class="clear"></div>
+        <div id="featured-slider">
+            <ul class="ui-tabs-nav">
+                <li class="ui-tabs-nav-item ui-tabs-selected" id="nav-post-217">
+                    <a href="#post-217">
+                    	<img alt="This is Our Planet" class="entry-thumb" src="http://demo.theme-junkie.com/videopro/wp-content/themes/videopro/functions/thumb.php?src=http%3A%2F%2Fb.vimeocdn.com%2Fts%2F311%2F336%2F311336765_640.jpg&amp;w=226&amp;h=127&amp;zc=1">
+                    </a>
+                    <h2 class="entry-title">
+                    	<a href="http://demo.theme-junkie.com/videopro/2012/09/07/this-is-our-planet/" rel="bookmark">This is Our Planet</a>
+                    </h2>
+                    <div class="entry-meta">
+                        Sep 7, 2012 / <a href="http://demo.theme-junkie.com/videopro/2012/09/07/this-is-our-planet/" rel="bookmark">Read more &raquo;</a>
+                    </div><!-- .entry-meta -->
+                </li>
+                <li class="ui-tabs-nav-item ui-tabs-selected" id="nav-post-212">
+                    <a href="#post-212">
+                    	<img alt="TED Movie Trailer 2012" class="entry-thumb" src="http://demo.theme-junkie.com/videopro/wp-content/themes/videopro/functions/thumb.php?src=http%3A%2F%2Fi.ytimg.com%2Fvi%2F3Vl5q06UElM%2Fhqdefault.jpg&amp;w=226&amp;h=127&amp;zc=1">
+                    </a>
+                    <h2 class="entry-title">
+	                    <a href="http://demo.theme-junkie.com/videopro/2012/09/07/ted-movie-trailer-2012/" rel="bookmark">
+	                    	TED Movie Trailer 2012
+	                    </a>
+                    </h2>
+                    <div class="entry-meta">
+                        Sep 7, 2012 / <a href="http://demo.theme-junkie.com/videopro/2012/09/07/ted-movie-trailer-2012/" rel="bookmark">Read more &raquo;</a>
+                    </div><!-- .entry-meta -->
+                </li>
+                <li class="ui-tabs-nav-item ui-tabs-selected" id="nav-post-185">
+                    <a href="#post-185">
+                    	<img alt="Granny O&#8217;Grimm&#8217;s Sleeping Beauty" class="entry-thumb" src="http://demo.theme-junkie.com/videopro/wp-content/themes/videopro/functions/thumb.php?src=http%3A%2F%2Fi.ytimg.com%2Fvi%2FcIDv1jJhoxY%2Fhqdefault.jpg&amp;w=226&amp;h=127&amp;zc=1">
+                    </a>
+                    <h2 class="entry-title">
+	                    <a href="http://demo.theme-junkie.com/videopro/2012/09/07/granny-ogrimms-sleeping-beauty/" rel="bookmark">
+	                    	Granny O&#8217;Grimm&#8217;s Sleeping Beauty
+	                    </a>
+                    </h2>
+                    <div class="entry-meta">
+                        Sep 7, 2012 / <a href="http://demo.theme-junkie.com/videopro/2012/09/07/granny-ogrimms-sleeping-beauty/" rel="bookmark">Read more &raquo;</a>
+                    </div><!-- .entry-meta -->
+                </li>
+                <li class="ui-tabs-nav-item ui-tabs-selected" id="nav-post-181">
+                    <a href="#post-181">
+                    	<img alt="obama" class="entry-thumb wp-post-image" height="68" sizes="(max-width: 121px) 100vw, 121px" src="http://demo.theme-junkie.com/videopro/files/2012/09/obama-121x68.jpg" srcset="http://demo.theme-junkie.com/videopro/files/2012/09/obama-121x68.jpg 121w, http://demo.theme-junkie.com/videopro/files/2012/09/obama-640x361.jpg 640w, http://demo.theme-junkie.com/videopro/files/2012/09/obama-226x127.jpg 226w" width="121">
+                    </a>
+                    <h2 class="entry-title">
+                    	<a href="http://demo.theme-junkie.com/videopro/2012/09/07/signs-and-cheers-for-obama-at-the-dnc-image-slide/" rel="bookmark">
+                   			Signs and Cheers for Obama at the DNC (Image Slide)
+                    	</a>
+                    </h2>
+                    <div class="entry-meta">
+                        Sep 7, 2012 / <a href="http://demo.theme-junkie.com/videopro/2012/09/07/signs-and-cheers-for-obama-at-the-dnc-image-slide/" rel="bookmark">Read more &raquo;</a>
+                    </div><!-- .entry-meta -->
+                </li>
+            </ul>
+            <div class="ui-tabs-panel ui-tabs-hide" id="post-217">
+                <div class="entry-embed">
+                    <iframe allowfullscreen="" frameborder="0" height="281" src="http://player.vimeo.com/video/44801709?title=0&amp;byline=0&amp;portrait=0&amp;color=ffffff" width="500"></iframe>
+                </div><!-- .entry-embed -->
+            </div><!-- #post-217 .ui-tabs-panel .ui-tabs-hide-->
+            <div class="ui-tabs-panel ui-tabs-hide" id="post-212">
+                <div class="entry-embed">
+                    <iframe allowfullscreen="" frameborder="0" height="315" src="http://www.youtube.com/embed/3Vl5q06UElM" width="560"></iframe>
+                </div><!-- .entry-embed -->
+            </div><!-- #post-212 .ui-tabs-panel .ui-tabs-hide-->
+            <div class="ui-tabs-panel ui-tabs-hide" id="post-185">
+                <div class="entry-embed">
+                    <iframe allowfullscreen="" frameborder="0" height="315" src="http://www.youtube.com/embed/cIDv1jJhoxY" width="560"></iframe>
+                </div><!-- .entry-embed -->
+            </div><!-- #post-185 .ui-tabs-panel .ui-tabs-hide-->
+            <div class="ui-tabs-panel ui-tabs-hide" id="post-181">
+                <a href="http://demo.theme-junkie.com/videopro/2012/09/07/signs-and-cheers-for-obama-at-the-dnc-image-slide/" rel="bookmark">
+                	<img alt="obama" class="entry-thumb wp-post-image" height="361" sizes="(max-width: 640px) 100vw, 640px" src="http://demo.theme-junkie.com/videopro/files/2012/09/obama-640x361.jpg" srcset="http://demo.theme-junkie.com/videopro/files/2012/09/obama-640x361.jpg 640w, http://demo.theme-junkie.com/videopro/files/2012/09/obama-121x68.jpg 121w, http://demo.theme-junkie.com/videopro/files/2012/09/obama-226x127.jpg 226w"
+                width="640">
+                </a>
+                <div class="slide-caption">
+                    <h2 class="entry-title">
+                    	<a href="http://demo.theme-junkie.com/videopro/2012/09/07/signs-and-cheers-for-obama-at-the-dnc-image-slide/" rel="bookmark">Signs and Cheers for Obama at the DNC (Image Slide)</a>
+                    </h2>
+                    <div class="entry-excerpt">
+                        Lorem ipsum dolor sit amet, consectetur adipiscing
+                        elit. Nam molestie molestie nisl, eu scelerisque turpis
+                        tempus at. Nam luctus ultrices imperdiet. Class aptent
+                        taciti sociosqu ad ...
+                    </div><!-- .entry-excerpt -->
+                </div><!-- .slide-caption -->
+            </div><!-- #post-181 .ui-tabs-panel .ui-tabs-hide-->
+        </div><!-- #featured-slider -->
+        <div id="content">
+            <div id="breadcrumbs">
+                What's New Here? <span class="arrow-flag"></span> <span class="subscribe"><a href="http://feeds.feedburner.com/ThemeJunkie">Subscribe</a></span>
+            </div><!--end #breadcrumbs-->
+            <article>
+                <div class="entry-box first-row" id="post-236">
+                    <a href="http://demo.theme-junkie.com/videopro/2012/09/07/the-arctic-light/" rel="bookmark">
+                    	<img alt="The Arctic Light" class="entry-thumb" src="http://demo.theme-junkie.com/videopro/wp-content/themes/videopro/functions/thumb.php?src=http%3A%2F%2Fb.vimeocdn.com%2Fts%2F160%2F252%2F160252896_640.jpg&amp;w=226&amp;h=127&amp;zc=1">
+                    </a>
+                    <div class="video-flag"></div>
+                    <div class="entry-meta">
+                        Sep 7, 2012 &middot; by <a href="http://demo.theme-junkie.com/videopro/author/radek/" rel="author" title="Posts by Radek">Radek</a>
+                        <span class="entry-comment"><a href="http://demo.theme-junkie.com/videopro/2012/09/07/the-arctic-light/#comments">3</a></span>
+                    </div><!-- .entry-meta -->
+                    <h2 class="entry-title">
+                    	<a href="http://demo.theme-junkie.com/videopro/2012/09/07/the-arctic-light/" rel="bookmark" title="Permanent Link to The Arctic Light">The Arctic Light</a>
+                    </h2>
+                </div><!-- #post-236 .entry-box -->
+                <div class="entry-box first-row" id="post-225">
+                    <a href="http://demo.theme-junkie.com/videopro/2012/09/07/new-york-time-lapse-tilt-shift/" rel="bookmark">
+                    	<img alt="NEW YORK &#8211; Time Lapse &#8211; Tilt Shift" class="entry-thumb" src="http://demo.theme-junkie.com/videopro/wp-content/themes/videopro/functions/thumb.php?src=http%3A%2F%2Fb.vimeocdn.com%2Fts%2F174%2F257%2F174257460_640.jpg&amp;w=226&amp;h=127&amp;zc=1">
+                    </a>
+                    <div class="video-flag"></div>
+                    <div class="entry-meta">
+                        Sep 7, 2012 &middot; by <a href="http://demo.theme-junkie.com/videopro/author/radek/" rel="author" title="Posts by Radek">Radek</a>
+                        <span class="entry-comment"><a href="http://demo.theme-junkie.com/videopro/2012/09/07/new-york-time-lapse-tilt-shift/#comments">1</a></span>
+                    </div><!-- .entry-meta -->
+                    <h2 class="entry-title">
+                    	<a href="http://demo.theme-junkie.com/videopro/2012/09/07/new-york-time-lapse-tilt-shift/" rel="bookmark" title="Permanent Link to NEW YORK &#8211; Time Lapse &#8211; Tilt Shift">NEW YORK &#8211; Time Lapse &#8211; Tilt Shift</a>
+                    </h2>
+                </div><!-- #post-225 .entry-box -->
+                <div class="entry-box first-row last-item" id="post-204">
+                    <a href="http://demo.theme-junkie.com/videopro/2012/09/07/ghost-recon-future-soldier-inside-recon-raven-strike/" rel="bookmark">
+                    	<img alt="Ghost Recon Future Soldier: Inside Recon &#8211; Raven Strike" class="entry-thumb" src="http://demo.theme-junkie.com/videopro/wp-content/themes/videopro/functions/thumb.php?src=http%3A%2F%2Fi.ytimg.com%2Fvi%2F-mLsyywCuUU%2Fhqdefault.jpg&amp;w=226&amp;h=127&amp;zc=1"></a>
+                    <div class="video-flag"></div>
+                    <div class="entry-meta">
+                        Sep 7, 2012 &middot; by <a href="http://demo.theme-junkie.com/videopro/author/radek/" rel="author" title="Posts by Radek">Radek</a><span class="entry-comment"><a href="http://demo.theme-junkie.com/videopro/2012/09/07/ghost-recon-future-soldier-inside-recon-raven-strike/#respond">0</a></span>
+                    </div><!-- .entry-meta -->
+                    <h2 class="entry-title">
+                    	<a href="http://demo.theme-junkie.com/videopro/2012/09/07/ghost-recon-future-soldier-inside-recon-raven-strike/" rel="bookmark" title="Permanent Link to Ghost Recon Future Soldier: Inside Recon &#8211; Raven Strike">Ghost Recon Future Soldier: Inside Recon &#8211; Raven Strike</a>
+                    </h2>
+                </div><!-- #post-204 .entry-box -->
+                <div class="clear"></div>
+                <div class="entry-box" id="post-227">
+                    <a href="http://demo.theme-junkie.com/videopro/2012/09/07/a-ha-take-on-me/" rel="bookmark">
+                    	<img alt="A-Ha &#8211; Take on Me" class="entry-thumb" src="http://demo.theme-junkie.com/videopro/wp-content/themes/videopro/functions/thumb.php?src=http%3A%2F%2Fb.vimeocdn.com%2Fts%2F128%2F811%2F128811726_640.jpg&amp;w=226&amp;h=127&amp;zc=1">
+                    </a>
+                    <div class="video-flag"></div>
+                    <div class="entry-meta">
+                        Sep 7, 2012 &middot; by <a href="http://demo.theme-junkie.com/videopro/author/radek/" rel="author" title="Posts by Radek">Radek</a>
+                        <span class="entry-comment"><a href="http://demo.theme-junkie.com/videopro/2012/09/07/a-ha-take-on-me/#respond">0</a></span>
+                    </div><!-- .entry-meta -->
+                    <h2 class="entry-title">
+                    	<a href="http://demo.theme-junkie.com/videopro/2012/09/07/a-ha-take-on-me/" rel="bookmark" title="Permanent Link to A-Ha &#8211; Take on Me">A-Ha &#8211; Take on Me</a>
+                    </h2>
+                </div><!-- #post-227 .entry-box -->
+                <div class="entry-box" id="post-209">
+                    <a href="http://demo.theme-junkie.com/videopro/2012/09/07/future-perfect/" rel="bookmark">
+                    	<img alt="FUTURE PERFECT" class="entry-thumb" src="http://demo.theme-junkie.com/videopro/wp-content/themes/videopro/functions/thumb.php?src=http%3A%2F%2Fb.vimeocdn.com%2Fts%2F321%2F289%2F321289486_640.jpg&amp;w=226&amp;h=127&amp;zc=1">
+                    </a>
+                    <div class="video-flag"></div>
+                    <div class="entry-meta">
+                        Sep 7, 2012 &middot; by <a href="http://demo.theme-junkie.com/videopro/author/radek/" rel="author" title="Posts by Radek">Radek</a><span class="entry-comment"><a href="http://demo.theme-junkie.com/videopro/2012/09/07/future-perfect/#respond">0</a></span>
+                    </div><!-- .entry-meta -->
+                    <h2 class="entry-title">
+                    	<a href="http://demo.theme-junkie.com/videopro/2012/09/07/future-perfect/" rel="bookmark" title="Permanent Link to FUTURE PERFECT">FUTURE PERFECT</a>
+                    </h2>
+                </div><!-- #post-209 .entry-box -->
+                <div class="entry-box last-item" id="post-176">
+                    <a href="http://demo.theme-junkie.com/videopro/2012/09/07/kate-perry-wide-awake/" rel="bookmark">
+                    	<img alt="Kate Perry &#8211; Wide Awake" class="entry-thumb" src="http://demo.theme-junkie.com/videopro/wp-content/themes/videopro/functions/thumb.php?src=http%3A%2F%2Fi.ytimg.com%2Fvi%2Fk0BWlvnBmIE%2Fhqdefault.jpg&amp;w=226&amp;h=127&amp;zc=1">
+                    </a>
+                    <div class="video-flag"></div>
+                    <div class="entry-meta">
+                        Sep 7, 2012 &middot; by <a href="http://demo.theme-junkie.com/videopro/author/radek/" rel="author" title="Posts by Radek">Radek</a>
+                        <span class="entry-comment"><a href="http://demo.theme-junkie.com/videopro/2012/09/07/kate-perry-wide-awake/#respond">0</a></span>
+                    </div><!-- .entry-meta -->
+                    <h2 class="entry-title">
+                    	<a href="http://demo.theme-junkie.com/videopro/2012/09/07/kate-perry-wide-awake/" rel="bookmark" title="Permanent Link to Kate Perry &#8211; Wide Awake">Kate Perry &#8211; Wide Awake</a>
+                    </h2>
+                </div><!-- #post-176 .entry-box -->
+                <div class="clear"></div>
+                <div class="entry-box" id="post-178">
+                    <a href="http://demo.theme-junkie.com/videopro/2012/09/07/experience-zero-gravity-on-vimeo/" rel="bookmark">
+                    	<img alt="Experience Zero Gravity on Vimeo" class="entry-thumb" src="http://demo.theme-junkie.com/videopro/wp-content/themes/videopro/functions/thumb.php?src=http%3A%2F%2Fb.vimeocdn.com%2Fts%2F194%2F505%2F194505568_640.jpg&amp;w=226&amp;h=127&amp;zc=1">
+                    </a>
+                    <div class="video-flag"></div>
+                    <div class="entry-meta">
+                        Sep 7, 2012 &middot; by <a href="http://demo.theme-junkie.com/videopro/author/radek/" rel="author" title="Posts by Radek">Radek</a>
+                        <span class="entry-comment"><a href="http://demo.theme-junkie.com/videopro/2012/09/07/experience-zero-gravity-on-vimeo/#respond">0</a></span>
+                    </div><!-- .entry-meta -->
+                    <h2 class="entry-title">
+                    	<a href="http://demo.theme-junkie.com/videopro/2012/09/07/experience-zero-gravity-on-vimeo/" rel="bookmark" title="Permanent Link to Experience Zero Gravity on Vimeo">Experience Zero Gravity on Vimeo</a>
+                    </h2>
+                </div><!-- #post-178 .entry-box -->
+                <div class="entry-box" id="post-206">
+                    <a href="http://demo.theme-junkie.com/videopro/2012/09/07/singapore/" rel="bookmark">
+                    	<img alt="Singapore" class="entry-thumb" src="http://demo.theme-junkie.com/videopro/wp-content/themes/videopro/functions/thumb.php?src=http%3A%2F%2Fb.vimeocdn.com%2Fts%2F335%2F900%2F335900984_640.jpg&amp;w=226&amp;h=127&amp;zc=1">
+                    </a>
+                    <div class="video-flag"></div>
+                    <div class="entry-meta">
+                        Sep 7, 2012 &middot; by <a href="http://demo.theme-junkie.com/videopro/author/radek/" rel="author" title="Posts by Radek">Radek</a>
+                        <span class="entry-comment"><a href="http://demo.theme-junkie.com/videopro/2012/09/07/singapore/#comments">2</a></span>
+                    </div><!-- .entry-meta -->
+                    <h2 class="entry-title">
+                    	<a href="http://demo.theme-junkie.com/videopro/2012/09/07/singapore/" rel="bookmark" title="Permanent Link to Singapore">Singapore</a>
+                    </h2>
+                </div><!-- #post-206 .entry-box -->
+                <div class="entry-box last-item" id="post-201">
+                    <a href="http://demo.theme-junkie.com/videopro/2012/09/07/thunder-wolves-announce-trailer/" rel="bookmark">
+                    	<img alt="Thunder Wolves &#8211; Announce Trailer" class="entry-thumb" src="http://demo.theme-junkie.com/videopro/wp-content/themes/videopro/functions/thumb.php?src=http%3A%2F%2Fb.vimeocdn.com%2Fts%2F337%2F730%2F337730726_640.jpg&amp;w=226&amp;h=127&amp;zc=1">
+                    </a>
+                    <div class="video-flag"></div>
+                    <div class="entry-meta">
+                        Sep 7, 2012 &middot; by <a href="http://demo.theme-junkie.com/videopro/author/radek/" rel="author" title="Posts by Radek">Radek</a>
+                        <span class="entry-comment"><a href="http://demo.theme-junkie.com/videopro/2012/09/07/thunder-wolves-announce-trailer/#respond">0</a></span>
+                    </div><!-- .entry-meta -->
+                    <h2 class="entry-title">
+                    	<a href="http://demo.theme-junkie.com/videopro/2012/09/07/thunder-wolves-announce-trailer/" rel="bookmark" title="Permanent Link to Thunder Wolves &#8211; Announce Trailer">Thunder Wolves &#8211; Announce Trailer</a>
+                    </h2>
+                </div><!-- #post-201 .entry-box -->
+                <div class="clear"></div>
+                <div class="entry-box" id="post-198">
+                    <a href="http://demo.theme-junkie.com/videopro/2012/09/07/resident-evil-retribution-2012-official-trailer-hd/" rel="bookmark">
+                    	<img alt="Resident Evil: Retribution 2012 &#8211; Official Trailer (HD)" class="entry-thumb" src="http://demo.theme-junkie.com/videopro/wp-content/themes/videopro/functions/thumb.php?src=http%3A%2F%2Fb.vimeocdn.com%2Fts%2F334%2F110%2F334110893_640.jpg&amp;w=226&amp;h=127&amp;zc=1">
+                    </a>
+                    <div class="video-flag"></div>
+                    <div class="entry-meta">
+                        Sep 7, 2012 &middot; by <a href="http://demo.theme-junkie.com/videopro/author/radek/" rel="author" title="Posts by Radek">Radek</a>
+                        <span class="entry-comment"><a href="http://demo.theme-junkie.com/videopro/2012/09/07/resident-evil-retribution-2012-official-trailer-hd/#respond">0</a></span>
+                    </div><!-- .entry-meta -->
+                    <h2 class="entry-title">
+	                    <a href="http://demo.theme-junkie.com/videopro/2012/09/07/resident-evil-retribution-2012-official-trailer-hd/" rel="bookmark" title="Permanent Link to Resident Evil: Retribution 2012 &#8211; Official Trailer (HD)">
+	                    	Resident Evil: Retribution 2012 &#8211; Official Trailer(HD)
+	                    </a>
+                    </h2>
+                </div><!-- #post-198 .entry-box -->
+                <div class="entry-box" id="post-196">
+                    <a href="http://demo.theme-junkie.com/videopro/2012/09/07/assassins-creed-meets-parkour-in-real-life/" rel="bookmark">
+                    	<img alt="Assassin&#8217;s Creed Meets Parkour in Real Life" class="entry-thumb" src="http://demo.theme-junkie.com/videopro/wp-content/themes/videopro/functions/thumb.php?src=http%3A%2F%2Fi.ytimg.com%2Fvi%2FaAhPaiajwDY%2Fhqdefault.jpg&amp;w=226&amp;h=127&amp;zc=1">
+                    </a>
+                    <div class="video-flag"></div>
+                    <div class="entry-meta">
+                        Sep 7, 2012 &middot; by <a href="http://demo.theme-junkie.com/videopro/author/radek/" rel="author" title="Posts by Radek">Radek</a>
+                        <span class="entry-comment"><a href="http://demo.theme-junkie.com/videopro/2012/09/07/assassins-creed-meets-parkour-in-real-life/#respond">0</a></span>
+                    </div><!-- .entry-meta -->
+                    <h2 class="entry-title">
+                    	<a href="http://demo.theme-junkie.com/videopro/2012/09/07/assassins-creed-meets-parkour-in-real-life/" rel="bookmark" title="Permanent Link to Assassin&#8217;s Creed Meets Parkour in Real Life">Assassin&#8217;s Creed Meets Parkour in Real Life</a>
+                    </h2>
+                </div><!-- #post-196 .entry-box -->
+                <div class="entry-box last-item" id="post-193">
+                    <a href="http://demo.theme-junkie.com/videopro/2012/09/07/musical-video-my-motorway/"rel="bookmark">
+                    	<img alt="Musical Video &#8220;My Motorway&#8221;" class="entry-thumb" src="http://demo.theme-junkie.com/videopro/wp-content/themes/videopro/functions/thumb.php?src=http%3A%2F%2Fb.vimeocdn.com%2Fts%2F139%2F183%2F139183925_640.jpg&amp;w=226&amp;h=127&amp;zc=1">
+                    </a>
+                    <div class="video-flag"></div>
+                    <div class="entry-meta">
+                        Sep 7, 2012 &middot; by <a href="http://demo.theme-junkie.com/videopro/author/radek/" rel="author" title="Posts by Radek">Radek</a>
+                        <span class="entry-comment"><a href="http://demo.theme-junkie.com/videopro/2012/09/07/musical-video-my-motorway/#respond">0</a></span>
+                    </div><!-- .entry-meta -->
+                    <h2 class="entry-title">
+                    	<a href="http://demo.theme-junkie.com/videopro/2012/09/07/musical-video-my-motorway/" rel="bookmark" title="Permanent Link to Musical Video &#8220;My Motorway&#8221;">Musical Video &#8220;My Motorway&#8221;</a>
+                    </h2>
+                </div><!-- #post-193 .entry-box -->
+                <div class="clear"></div>
+                <div class="clear"></div>
+            </article><!-- article -->
+            <div class="pagination">
+                <span class='page-numbers current'>1</span>
+                <a class='page-numbers' href='http://demo.theme-junkie.com/videopro/page/2/'>2</a> 
+                <a class='page-numbers' href='http://demo.theme-junkie.com/videopro/page/3/'>3</a> 
+                <a class='page-numbers' href='http://demo.theme-junkie.com/videopro/page/4/'>4</a> 
+                <a class="next page-numbers" href="http://demo.theme-junkie.com/videopro/page/2/">next &raquo;</a>
+            </div><!-- .pagination -->
+        </div><!-- #content -->
+        <div id="sidebar">
+            <div class="widget" id="secondary-nav">
+                <ul class="nav" id="secondary-navigation">
+                    <li class="cat-item cat-item-3">
+                    	<a href="http://demo.theme-junkie.com/videopro/category/animation/">Animation</a>
+                    </li>
+                    <li class="cat-item cat-item-4">
+                        <a href="http://demo.theme-junkie.com/videopro/category/education/">Education</a>
+                        <ul class='children'>
+                            <li class="cat-item cat-item-16">
+                                <a href="http://demo.theme-junkie.com/videopro/category/education/sub-category-1-education/">Sub Category 1</a>
+                                <ul class='children'>
+                                    <li class="cat-item cat-item-17">
+                                    	<a href="http://demo.theme-junkie.com/videopro/category/education/sub-category-1-education/sub-category-1-1/">Sub Category 1.1</a>
+                                    </li>
+                                    <li class="cat-item cat-item-18">
+                                    	<a href="http://demo.theme-junkie.com/videopro/category/education/sub-category-1-education/sub-category-1-2/">Sub Category 1.2</a>
+                                    </li>
+                                    <li class="cat-item cat-item-19">
+                                    	<a href="http://demo.theme-junkie.com/videopro/category/education/sub-category-1-education/sub-category-1-3/">Sub Category 1.3</a>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li class="cat-item cat-item-20">
+                            	<a href="http://demo.theme-junkie.com/videopro/category/education/sub-category-2-education/">Sub Category 2</a>
+                            </li>
+                            <li class="cat-item cat-item-21">
+                            	<a href="http://demo.theme-junkie.com/videopro/category/education/sub-category-3-education/">Sub Category 3</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="cat-item cat-item-5">
+                        <a href="http://demo.theme-junkie.com/videopro/category/entertainment/">Entertainment</a>
+                        <ul class='children'>
+                            <li class="cat-item cat-item-11">
+                            	<a href="http://demo.theme-junkie.com/videopro/category/entertainment/sub-category-1/">Sub Category 1</a>
+                            </li>
+                            <li class="cat-item cat-item-12">
+                            	<a href="http://demo.theme-junkie.com/videopro/category/entertainment/sub-category-2/">Sub Category 2</a>
+                            </li>
+                            <li class="cat-item cat-item-13">
+                            	<a href="http://demo.theme-junkie.com/videopro/category/entertainment/sub-category-3/">Sub Category 3</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="cat-item cat-item-6">
+                    	<a href="http://demo.theme-junkie.com/videopro/category/films/">Films</a>
+                    </li>
+                    <li class="cat-item cat-item-7">
+                    	<a href="http://demo.theme-junkie.com/videopro/category/music/">Music</a>
+                    </li>
+                    <li class="cat-item cat-item-8">
+                    	<a href="http://demo.theme-junkie.com/videopro/category/nature/">Nature</a>
+                    </li>
+                    <li class="cat-item cat-item-9">
+                    	<a href="http://demo.theme-junkie.com/videopro/category/news/">News</a>
+                    </li>
+                    <li class="cat-item cat-item-10">
+                    	<a href="http://demo.theme-junkie.com/videopro/category/sports/">Sports</a>
+                    </li>
+                    <li class="cat-item cat-item-14">
+                    	<a href="http://demo.theme-junkie.com/videopro/category/travel/">Travel</a>
+                    </li>
+                    <li class="cat-item cat-item-15">
+                    	<a href="http://demo.theme-junkie.com/videopro/category/trialers/">Trialers</a>
+                    </li>
+                </ul>
+            </div><!-- #secondary-nav .widget-->
+            <div class="widget widget_recent_entries" id="recent-posts-3">
+                <h3 class="widget-title">Latest News</h3>
+                <ul>
+                    <li>
+                    	<a href="http://demo.theme-junkie.com/videopro/2012/09/07/the-arctic-light/">The Arctic Light</a>
+                    </li>
+                    <li>
+                    	<a href="http://demo.theme-junkie.com/videopro/2012/09/07/new-york-time-lapse-tilt-shift/">NEW YORK &#8211; Time Lapse &#8211; Tilt Shift</a>
+                    </li>
+                    <li>
+                    	<a href="http://demo.theme-junkie.com/videopro/2012/09/07/ghost-recon-future-soldier-inside-recon-raven-strike/"> Ghost Recon Future Soldier: Inside Recon &#8211; Raven Strike</a>
+                    </li>
+                    <li>
+                    	<a href="http://demo.theme-junkie.com/videopro/2012/09/07/a-ha-take-on-me/">A-Ha &#8211; Take on Me</a>
+                    </li>
+                    <li>
+                    	<a href="http://demo.theme-junkie.com/videopro/2012/09/07/future-perfect/">FUTURE PERFECT</a>
+                    </li>
+                    <li>
+                    	<a href="http://demo.theme-junkie.com/videopro/2012/09/07/kate-perry-wide-awake/">Kate Perry &#8211; Wide Awake</a>
+                    </li>
+                    <li>
+                    	<a href="http://demo.theme-junkie.com/videopro/2012/09/07/experience-zero-gravity-on-vimeo/">Experience Zero Gravity on Vimeo</a>
+                    </li>
+                    <li>
+                    	<a href="http://demo.theme-junkie.com/videopro/2012/09/07/singapore/">Singapore</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="widget widget_archive" id="archives-3">
+                <h3 class="widget-title">Archives</h3>
+                <ul>
+                    <li>
+                    	<a href='http://demo.theme-junkie.com/videopro/2012/09/'>September 2012</a>
+                    </li>
+                    <li>
+                    	<a href='http://demo.theme-junkie.com/videopro/2012/01/'>January 2012</a>
+                    </li>
+                </ul>
+            </div>
+        </div><!-- #sidebar -->
+        <div class="clear"></div>
+        <footer>
+            <div class="footer-wrap">
+                <div id="footer-widget-1">
+                    <div class="widget footer-widget widget_recent_entries" id="recent-posts-2">
+                        <h3 class="widget-title">Recent Posts</h3>
+                        <ul>
+                            <li>
+                            	<a href="http://demo.theme-junkie.com/videopro/2012/09/07/the-arctic-light/">The Arctic Light</a>
+                            </li>
+                            <li>
+                            	<a href="http://demo.theme-junkie.com/videopro/2012/09/07/new-york-time-lapse-tilt-shift/">NEW YORK &#8211; Time Lapse &#8211; Tilt Shift</a>
+                            </li>
+                            <li>
+                            <a href="http://demo.theme-junkie.com/videopro/2012/09/07/ghost-recon-future-soldier-inside-recon-raven-strike/">Ghost Recon Future Soldier: Inside Recon &#8211; Raven Strike</a>
+                            </li>
+                            <li>
+                            	<a href="http://demo.theme-junkie.com/videopro/2012/09/07/a-ha-take-on-me/">A-Ha &#8211; Take on Me</a>
+                            </li>
+                            <li>
+                            	<a href="http://demo.theme-junkie.com/videopro/2012/09/07/future-perfect/">FUTURE PERFECT</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div id="footer-widget-2">
+                    <div class="widget footer-widget widget_recent_comments"
+                    id="recent-comments-2">
+                        <h3 class="widget-title">Discussions</h3>
+                        <ul id="recentcomments">
+                            <li class="recentcomments">
+	                            <span class="comment-author-link">admin</span> on <a href="http://demo.theme-junkie.com/videopro/2012/09/07/new-york-time-lapse-tilt-shift/#comment-19">NEW YORK &#8211; Time Lapse &#8211; Tilt Shift</a>
+                            </li>
+                            <li class="recentcomments">
+	                            <span class="comment-author-link">admin</span> on <a href="http://demo.theme-junkie.com/videopro/2012/09/07/singapore/#comment-18">Singapore</a>
+                            </li>
+                            <li class="recentcomments">
+	                            <span class="comment-author-link">admin</span> on <a href="http://demo.theme-junkie.com/videopro/2012/09/07/singapore/#comment-17">Singapore</a>
+                            </li>
+                            <li class="recentcomments">
+	                            <span class="comment-author-link">Radek</span> on <a href="http://demo.theme-junkie.com/videopro/2012/09/07/ted-movie-trailer-2012/#comment-16"> TED Movie Trailer 2012</a>
+                            </li>
+                            <li class="recentcomments">
+	                            <span class="comment-author-link">admin</span> on <a href="http://demo.theme-junkie.com/videopro/2012/09/07/the-arctic-light/#comment-15">The Arctic Light</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div id="footer-widget-3">
+                    <div class="widget footer-widget widget_tag_cloud" id="tag_cloud-2">
+                        <h3 class="widget-title">Tags</h3>
+                        <div class="tagcloud">
+                            <a class='tag-link-22 tag-link-position-1' href='http://demo.theme-junkie.com/videopro/tag/basketball/' style='font-size: 8pt;' title='1 topic'>Basketball</a> 
+                            <a class='tag-link-23 tag-link-position-2' href='http://demo.theme-junkie.com/videopro/tag/featured/' style='font-size: 22pt;' title='13 topics'>featured</a> 
+                            <a class='tag-link-24 tag-link-position-3' href='http://demo.theme-junkie.com/videopro/tag/football/' style='font-size: 8pt;' title='1 topic'>Football</a> 
+                            <a class='tag-link-25 tag-link-position-4' href='http://demo.theme-junkie.com/videopro/tag/french/' style='font-size: 8pt;' title='1 topic'>French</a>
+                            <a class='tag-link-33 tag-link-position-5' href='http://demo.theme-junkie.com/videopro/tag/games/' style='font-size: 10.964705882353pt;' title='2 topics'>games</a> 
+                            <a class='tag-link-26 tag-link-position-6' href='http://demo.theme-junkie.com/videopro/tag/ghs/' style='font-size: 8pt;' title='1 topic'>GHS</a>
+                            <a class='tag-link-27 tag-link-position-7' href='http://demo.theme-junkie.com/videopro/tag/ice-baths/' style='font-size: 8pt;' title='1 topic'>ICE BATHS</a> 
+                            <a class='tag-link-32 tag-link-position-8' href='http://demo.theme-junkie.com/videopro/tag/island/' style='font-size: 8pt;' title='1 topic'>island</a>
+                            <a class='tag-link-34 tag-link-position-9' href='http://demo.theme-junkie.com/videopro/tag/music-2/'style='font-size: 10.964705882353pt;' title='2 topics'>music</a> 
+                            <a class='tag-link-28 tag-link-position-10' href='http://demo.theme-junkie.com/videopro/tag/tag-1/' style='font-size: 14.588235294118pt;' title='4 topics'>tag 1</a> 
+                            <a class='tag-link-29 tag-link-position-11' href='http://demo.theme-junkie.com/videopro/tag/tag-2/' style='font-size: 12.941176470588pt;' title='3 topics'>tag 2</a>
+                            <a class='tag-link-30 tag-link-position-12' href='http://demo.theme-junkie.com/videopro/tag/tag-3/' style='font-size: 14.588235294118pt;' title='4 topics'>tag 3</a> 
+                            <a class='tag-link-31 tag-link-position-13' href='http://demo.theme-junkie.com/videopro/tag/tag-4/' style='font-size: 15.905882352941pt;' title='5 topics'>tag 4</a>
+                        </div>
+                    </div>
+                    <div class="widget footer-widget widget_text" id="text-2">
+                        <h3 class="widget-title">Text Widget</h3>
+                        <div class="textwidget">
+                            Curabitur at est vel odio aliquam fermentum in vel
+                            tortor. Aliquam eget laoreet metus. Quisque auctor
+                            dolor fermentum nisi imperdiet vel placerat purus
+                            convallis. Fusce et risus eu justo euismod
+                            pellentesque.
+                        </div>
+                    </div>
+                </div>
+                <div id="footer-widget-4">
+                    <div class="widget footer-widget widget_links" id="linkcat-2">
+                        <h3 class="widget-title">Blogroll</h3>
+                        <ul class='xoxo blogroll'>
+                            <li>
+                            	<a href="http://codex.wordpress.org/">Documentation</a>
+                            </li>
+                            <li>
+                            	<a href="http://wordpress.org/extend/plugins/">Plugins</a>
+                            </li>
+                            <li>
+                            	<a href="http://wordpress.org/support/">Support Forums</a>
+                            </li>
+                            <li>
+                            	<a href="http://wordpress.org/extend/themes/">Themes</a>
+                            </li>
+                            <li>
+	                            <a href="http://wordpress.org/news/">WordPress Blog</a>
+                            </li>
+                            <li>
+	                            <a href="http://planet.wordpress.org/">WordPress Planet</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="clear"></div>
+            </div><!-- .footer-wrap -->
+            <div class="copyright">
+                <div class="left">
+                    &copy; 2016 <a href="http://demo.theme-junkie.com/videopro" rel="home" title="Just another Theme Junkie Demos site">Xtube</a>. All rights reserved.
+                </div><!-- .left -->
+                <div class="right">
+                    <a href="http://www.theme-junkie.com">Xtube Planet</a> powered by <a href="#">Albert Shevchenko and Nurbol Boken</a>
+                </div><!-- .right -->
+                <div class="clear"></div>
+            </div><!-- .copyright -->
+        </footer><!-- footer -->
+    </div><!-- #wrapper -->
+    <script>
+	    (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+	    (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+	    m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+	    })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+	    ga('create', 'UA-6609819-8', 'auto');
+	    ga('create', 'UA-82870385-2', 'auto', 'clientTracker');
+	    ga('send', 'pageview');
+	    ga('clientTracker.send', 'pageview');
+    </script>
+    <script src='js/wp-embed.min.js' type='text/javascript'></script>
+</body>
+</html>
